@@ -1,0 +1,57 @@
+#bubble {
+	z-index: 10;
+	display: none;
+	position: absolute;
+	color: black;
+	margin-left: 140px;
+	border: 1.5px solid #CCC;
+	padding: 10px 20px 5px 20px;
+	background: white;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+
+#bubble.left {
+	float: left;
+}
+
+#bubble.left::before {
+	top: 15px;
+	bottom: auto;
+	left: -24px;
+	border-width: 10px 24px 10px 0;
+	border-color: transparent #CCC;
+}
+
+#bubble::before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 40px;
+	border-width: 20px 20px 0;
+	border-style: solid;
+	border-color: #CCC transparent;
+	display: block;
+	width: 0;
+}
+
+#bubble.left::after {
+	top: 16px;
+	bottom: auto;
+	left: -21px;
+	border-width: 9px 21px 9px 0;
+	border-color: transparent white;
+}
+
+#bubble::after {
+	content: "";
+	position: absolute;
+	bottom: -13px;
+	left: 47px;
+	border-width: 13px 13px 0;
+	border-style: solid;
+	border-color: white transparent;
+	display: block;
+	width: 0;
+}

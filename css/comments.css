@@ -1,0 +1,21 @@
+.nbComments {
+  font-size: 22px;
+  line-height:22px;
+  margin-top: 4px;
+  padding-right:10px;
+  color: gray;
+  float: left;
+}
+
+.nbComments a {
+  color: gray;
+}
+
+.nbComments a:hover {
+  text-decoration:none;
+}
+
+#disqus_thread {
+  width: 1030px;
+  padding: 10px;
+}

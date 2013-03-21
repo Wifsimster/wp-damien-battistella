@@ -1,0 +1,23 @@
+#navbar {
+	position: relative;
+	z-index: 100;
+	left: 160px;
+	top: -50px;
+	width: 1020px;
+}
+
+#navbar ul li a {	
+	color: whiteSmoke;
+}
+
+#navbar ul li a:hover {	
+	color: black;
+}
+
+#navbar .nav-pills {
+	position: absolute;
+}
+
+#navbar .navbar-search {
+	top: -5px;
+}

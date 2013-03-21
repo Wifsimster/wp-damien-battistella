@@ -1,0 +1,21 @@
+.tags {
+  opacity: .5;
+  position: absolute;
+  display: inline;
+  top: 15px;
+  right: 5px;
+  color: white;
+}
+
+.tags a {
+  color: white;
+}
+
+.tags span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: black;
+  margin: 2px 4px;
+  padding: 6px;
+}

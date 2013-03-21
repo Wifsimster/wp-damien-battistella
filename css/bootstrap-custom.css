@@ -1,0 +1,82 @@
+img {
+  max-width: none;
+}
+
+.modal-header {
+	padding : 15px;
+	position: relative;
+}
+
+.modal-body ul {
+	list-style: disc;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.wp-caption {
+	display: block;
+	margin-bottom: 5px;
+	line-height: 20px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.wp-caption > img {
+	display: block;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wp-caption-text {
+	padding: 5px 9px 0 9px;
+	color: #555555;
+	text-align: center !important;
+}
+
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	font-style: italic;
+	width: 500px;
+	margin: 0 0 0 15px !important;
+	padding: 0.25em 40px !important;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C" !important;
+	font-size: 80px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	color: #7a7a7a;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}

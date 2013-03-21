@@ -1,0 +1,18 @@
+.social {
+	margin: -13px auto -9px auto;
+	width: 318px;
+}
+
+.social span {
+	margin-right: 10px;
+}
+
+.social span, .social form {
+	display: inline-block !important;
+	margin: 0;
+	vertical-align: text-top;
+}
+
+.social .twitter {
+	width: 95px;
+}

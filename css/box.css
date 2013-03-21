@@ -1,0 +1,84 @@
+.box {
+	position: relative;
+	background-color: white;
+	border: 1px solid #CCC;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+.box::before,.box::after {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 18px;
+	bottom: 14px;
+	width: 70%;
+	max-width: 300px;
+	height: 55%;
+	max-height: 100px;
+	background: transparent;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	transform: skew(-15deg) rotate(-6deg);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+}
+
+.box > a:hover {
+	text-decoration: none;
+}
+
+.box h2 {
+	font-size: 14px;
+	line-height: 14px;
+	color: #333;
+	display: block;
+	background: #ECEFF4;
+	border-bottom: 1px solid #DEE2EC;
+	border-top: 1px solid #DEE2EC;
+	padding: 8px 10px;
+	position: relative;
+	margin: 0;
+}
+
+.box > p {
+	margin: 10px 0;
+}
+
+.box h2:first-child {
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+	border-top: none;
+}
+
+.box::after {
+	left: auto;
+	right: 18px;
+	transform: skew(15deg) rotate(6deg);
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+}
+
+.row>.box {
+	margin-left: 18px !important;
+}
+
+.row-fluid>.box {
+	margin-left: 1.156% !important;
+}
+
+.box p, .box pre {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.box h3, .box h4 {
+	margin: 10px 20px;
+}

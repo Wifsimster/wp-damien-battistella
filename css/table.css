@@ -1,0 +1,88 @@
+#list {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	background-color: white;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin: 10px 0 0 0;
+}
+
+#list::before,#list::after {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 18px;
+	bottom: 15px;
+	width: 70%;
+	max-width: 500px;
+	height: 55%;
+	max-height: 300px;
+	background: transparent;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 8px 26px rgba(0, 0, 0,  0.5);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0,  0.5);
+	transform: skew(-15deg) rotate(-6deg);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+}
+
+#list::after {
+	left: auto;
+	right: 18px;
+	transform: skew(15deg) rotate(6deg);
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+}
+
+#list thead th {
+	color: #555;
+	font-size: 14px;
+	cursor: pointer;
+	border-color: #eee;
+	font-weight: bold;
+	padding: 10px 0;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #CCC;
+	background: #f6f6f6;
+}
+
+#list thead th:hover {
+	opacity: 0.8;
+}
+
+#list thead th:first-child {
+	-moz-border-radius: 10px 0 0 0;
+	-webkit-border-radius: 10px 0 0 0;
+	border-radius: 10px 0 0 0;
+}
+
+#list thead th:last-child {
+	-moz-border-radius: 0 10px 0 0;
+	-webkit-border-radius: 0 10px 0 0;
+	border-radius: 0 10px 0 0;
+}
+
+#list tbody tr:nth-child(even) {
+	background-color: #eee;
+}
+
+#list tbody tr:nth-child(odd) {
+	background-color: white;
+}
+
+#list td {
+	border-bottom: 1px solid #CCC;
+	height: 34px;
+	padding: 4px 8px;
+	text-align: justify;
+}
+
+#list .center td {
+	text-align: center
+}
