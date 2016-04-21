@@ -24,7 +24,7 @@
 					<?php 
 					/* Get category post */						
 					foreach((get_the_category()) as $category) { 
-						echo '<a href="'.get_home_url().'/?cat='.$category->cat_ID.'"><i class="icon-'.$category->cat_name.' icon-white"></i></a>'; 
+						echo '<a href="'.get_home_url().'/?cat='.$category->cat_ID.'"><i class="glyphicon glyphicon-'.$category->cat_name.'"></i></a>'; 
 					} 
 					?>
 				</div>
@@ -33,7 +33,7 @@
 						<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Lien permanent vers "%s"'), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 							<?php the_title(); ?>
 						</a>
-						<?php edit_post_link('<i class="icon-edit"></i>', '<span class="pull-right">', '</span>'); ?>
+						<?php edit_post_link('<i class="glyphicon glyphicon-edit"></i>', '<span class="pull-right">', '</span>'); ?>
 					</h2>						
 					<small>
 						Par <?php echo get_the_author(); ?>
@@ -101,7 +101,7 @@
 		<div class="timeline"></div>
 			<div class="buble left">
 				<div class="theme">
-					<i class="icon-comment icon-white"></i>
+					<i class="glyphicon glyphicon-comment"></i>
 				</div>
 				<?php comments_template( '', true ); ?>
 			</div>
@@ -113,7 +113,7 @@
 			<div class="timeline"></div>
 				<div class="buble left">
 					<div class="theme">
-						<i class="icon-comment icon-white"></i>
+						<i class="glyphicon glyphicon-comment"></i>
 					</div>
 					<div class="modal-header">
 						<h3>Articles les plus vus dans cette catégorie</h3>

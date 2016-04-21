@@ -66,6 +66,7 @@ section .buble.left {
 section .buble {
   display: block;
   position: relative;
+  width: 1100px;
   color: black;
   border: 1.5px solid #cccccc;
   background: white;
@@ -119,7 +120,7 @@ section .buble .modal-body {
 }
 
 section .buble .modal-body img {
-  max-width: 1010px;
+  max-width: 1100px;
 }
 
 section .buble .modal-body p {
@@ -134,7 +135,7 @@ section .buble .modal-header small {
 }
 
 section .buble .modal-body img {
-  max-width: 1010px;
+  max-width: 1100px;
 }
 
 section .buble .modal-body p {
@@ -145,12 +146,12 @@ section .theme {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
   overflow: hidden;
-  background: #cccccc;
+  background: #CCC;
   position: absolute;
-  margin: 8px 0 0 -66px;
+  margin: 0 0 0 -70px;
   padding: 11px 0 0 11px;
   float: left;
   -moz-box-shadow: inset 3px 0 10px #888;
@@ -158,12 +159,18 @@ section .theme {
   box-shadow: inset 3px 0 10px #888;
 }
 
-section .icon-edit {
+section .theme .glyphicon {
+  color: #5A5A5A;
+  font-size: 18px;
+  left: 2px;
+}
+
+section .glyphicon-edit {
   margin: 4px 10px;
   opacity: .3;
 }
 
-section .icon-edit:hover {
+section .glyphicon-edit:hover {
   opacity: .8;
 }
 
@@ -174,7 +181,7 @@ section .icon-edit:hover {
 }
 
 .modal-img img {
-  max-width: 1050px;
+  width: 1100px;
 }
 
 .btn-demo-source {

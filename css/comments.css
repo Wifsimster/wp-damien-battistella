@@ -19,3 +19,178 @@
   width: 1030px;
   padding: 10px;
 }
+
+
+#comments {
+  padding: 20px 15px;
+}
+
+.commentlist > .comment {
+  padding: 10px 15px;
+}
+
+/* Avatar */
+.commentlist .comment .comment-author img {
+  position: absolute;
+  display: block !important;
+  left: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.commentlist .comment .comment-body {
+  margin: 5px 0;
+}
+
+/* Username */
+.commentlist .comment .comment-author cite {
+  position: relative;
+  float: left;
+  font-weight: bold;
+  margin: 0 0 10px 60px;
+}
+.commentlist .comment .comment-author span {
+  display: none;
+}
+
+.commentlist .comment .comment-meta {
+  float: left;
+  padding-left: 10px;
+}
+
+.commentlist .comment p {
+  clear: both;
+  margin: 0 120px 0 60px;
+  line-height: 18px;
+}
+
+.comment-body {
+  position: relative;
+}
+
+.reply {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.commentlist .comment ul.children {
+  margin: 20px 0;
+}
+
+.commentlist .comment ul.children li .comment-body {
+  margin: 20px 0;
+}
+
+
+ol.commentlist {
+  list-style-type: none;
+}
+
+ol.commentlist ul.children {
+  list-style-type: none;
+}
+
+ol.commentlist li.comment {
+  min-height: 60px;
+}
+
+/*
+li.odd {
+  background-color: #E6E6E6;
+}
+*/
+
+.comment-reply-link, .form-submit > .submit {
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid #CCC;
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:active,
+.comment-reply-link.disabled {
+  color: #333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+
+.comment-respond {
+  margin: 20px 15px;
+}
+
+.comment-respond .form-horizontal .control-group .controls .quicktags-toolbar {
+  margin: 10px 0;
+}
+
+.comment-respond .form-horizontal .control-group .controls textarea {
+  height: 100px;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  overflow: auto;
+}
+
+.comment-respond .form-horizontal .form-allowed-tags {
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-color: #1b809e;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.comment-respond .form-horizontal .form-allowed-tags label {
+  color: #1b809e;
+}
+
+.comment-respond .form-horizontal .form-allowed-tags pre {
+  white-space: normal;
+  padding: 10px 2px;
+  line-height: 16px;
+}

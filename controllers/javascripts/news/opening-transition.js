@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
 	$('footer').hide();
-	$('section img').hide();
+	//$('section img').hide();
 
     $('#pageContent').css({"margin-top":"-2000px", "position":"absolute"}).show();
     
@@ -35,7 +35,7 @@ $(document).ready(function()
 		$(".social").fadeIn("slow");
 	}, 5000);
 
-	$('section img').load(function(){
-		$(this).slideDown(800);
-	});
+//	$('section img').load(function(){
+//		$(this).slideDown(800);
+//	});
 });

@@ -29,7 +29,7 @@
 		<div class="timeline"></div>
 		<div class="buble left">
 			<div class="theme">
-				<i class="icon-chevron-right icon-white"></i>
+				<i class="glyphicon glyphicon-chevron-right glyphicon-white"></i>
 			</div>
 			<div class="modal-body">
 				<div id="nav-below" class="navigation">
@@ -59,7 +59,7 @@
 						<?php 
 						/* Get category post */						
 						foreach((get_the_category()) as $category) { 
-							echo '<a href="'.get_home_url().'/?cat='.$category->cat_ID.'"><i class="icon-'.$category->cat_name.' icon-white"></i></a>'; 
+							echo '<a href="'.get_home_url().'/?cat='.$category->cat_ID.'"><i class="glyphicon glyphicon-'.$category->cat_name.'"></i></a>'; 
 						} 
 						?>
 					</div>
@@ -68,7 +68,7 @@
 							<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Lien permanent vers "%s"'), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
 								<?php the_title(); ?>
 							</a>
-							<?php edit_post_link('<i class="icon-edit"></i>', '<span class="pull-right">', '</span>'); ?>
+							<?php edit_post_link('<i class="glyphicon glyphicon-edit"></i>', '<span class="pull-right">', '</span>'); ?>
 						</h2>						
 						<small>
 							Par <?php echo get_the_author(); ?>
@@ -128,7 +128,7 @@
 							<?php comments_number('Aucun commentaire', '1 commentaire', '% commentaires');	?>
 							<?php if(function_exists(the_views)) { echo '- '; the_views(); } ?>
 						</div>
-						<a href="<?php get_home_url() ?>/?p=<?php the_ID(); ?>" class="btn pull-right">Lire la suite</a>
+						<a href="<?php get_home_url() ?>/?p=<?php the_ID(); ?>" class="btn btn-primary pull-right">Lire la suite</a>
 					</div><!-- #modal-footer -->
 				</div><!-- #bubble-left -->
 			</section><!-- #post-## -->
@@ -145,7 +145,7 @@
 		<div class="timeline"></div>
 		<div class="buble left">
 			<div class="theme">
-				<i class="icon-chevron-left icon-white"></i>
+				<i class="glyphicon glyphicon-chevron-left"></i>
 			</div>
 			<div class="modal-body">
 				<div id="nav-below" class="navigation">

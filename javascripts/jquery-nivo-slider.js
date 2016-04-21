@@ -141,7 +141,7 @@
 				//Set initial active link
 				$('.nivo-controlNav a:eq('+ vars.currentSlide +')', slider).addClass('active');
 				
-				$('.nivo-controlNav a', slider).live('click', function(){
+				$('.nivo-controlNav a', slider).on('click', function(){
 					if(vars.running) return false;
 					if($(this).hasClass('active')) return false;
 					clearInterval(timer);
